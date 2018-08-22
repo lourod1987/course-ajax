@@ -12,3 +12,11 @@ function handleSuccess () {
   asyncRequestObject.onload = handleSuccess;
   asyncRequestObject.onerror = handleError;
   asyncRequestObject.send();
+
+  /*
+  function handleSuccess () {
+    const data = JSON.parse( this.responseText ); // convert data from JSON to a JavaScript object
+    console.log( data );
+    }
+    
+    asyncRequestObject.onload = handleSuccess;*/
