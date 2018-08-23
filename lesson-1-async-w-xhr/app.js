@@ -9,7 +9,6 @@
         responseContainer.innerHTML = '';
         searchedForText = searchField.value;
         console.log(searchedForText);
-    
 
         const unsplashRequest = new XMLHttpRequest();
         unsplashRequest.open('GET', `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`);
