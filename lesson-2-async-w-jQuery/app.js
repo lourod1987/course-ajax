@@ -23,9 +23,8 @@
             });
 
         function addImage(data) {
-            console.log(data);
             const firstImage = data.results[0];
-            console.log(firstImage);
+
             responseContainer.insertAdjacentHTML('afterbegin', `<figure>
                         <img src="${firstImage.urls.small}" alt="${searchedForText}">
                         <figcaption>${searchedForText} by ${firstImage.user.name}</figcaption>
